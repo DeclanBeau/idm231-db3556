@@ -1,52 +1,528 @@
-const taurus = document.getElementById('Taurus');
-const gemini = document.getElementById('Gemini');
-const cancer = document.getElementById('Cancer');
-const leo = document.getElementById('Leo');
-const virgo = document.getElementById('Virgo');
-const libra = document.getElementById('Libra');
-const scorpio = document.getElementById('Scorpio');
 const sagit = document.getElementById('Sagittarius')
 const capricorn = document.getElementById('Capricorn');
 const aqua = document.getElementById('Aquarius');
 
 function selectAires(){
-    const aires = document.getElementById('Aires');
-    if (aires){
-        aires.addEventListener('mouseover', function() {
+    const sign = document.getElementById('Aires');
+    const exit = document.getElementById('exit');
+    if (sign){
+        sign.addEventListener('mouseover', function() {
             this.style.cursor = 'pointer';
         }, false);
-        aires.addEventListener('click', function() {
-            const infoText = document.getElementById('infoText');
-                if(infoText){
-                    infoText.style.display = 'block';
-                }
-            document.body.style.background = '#910000';        
+        sign.addEventListener('click', function() {
+          const infoText = document.getElementById('infoText');
+          const carHeading = document.getElementById('carHeading');
+          const pageHeading = document.getElementById('pageHeading');
+          const label = document.getElementById('label');
+          infoText.style.color = '#050505';
+          carHeading.style.color = '#050505';
+          pageHeading.style.color = '#050505';
+          label.style.color = '#050505';
+          infoText.style.display = 'block';
+          infoText.textContent = 'You selected the Subaru BRAT';
+          carHeading.textContent = 'Subaru BRAT';
+          exit.style.display = 'flex';
+          document.body.style.background = '#DB4646';
         }, false);
-    }
+    }    
+    if (exit){
+       exit.addEventListener('mouseover', function() {
+         this.style.cursor = 'pointer';
+       }, false);
+
+       exit.addEventListener('click', function()  {
+        const infoText = document.getElementById('infoText');
+        const carHeading = document.getElementById('carHeading');
+        infoText.style.display = 'none';
+        infoText.textContent = ' ';
+        carHeading.textContent = 'Select a car for more information.'
+        exit.style.display = 'none';
+        document.body.style.background = '#EFEFEF';
+
+       }), false;
+     }
+}
+
+function selectTaurus(){
+  const taurus = document.getElementById('Taurus');
+  const exit = document.getElementById('exit');
+  if (taurus){
+    taurus.addEventListener('mouseover', function() {
+          this.style.cursor = 'pointer';
+      }, false);
+      taurus.addEventListener('click', function() {
+        const infoText = document.getElementById('infoText');
+        const carHeading = document.getElementById('carHeading');
+        const pageHeading = document.getElementById('pageHeading');
+        const label = document.getElementById('label');
+        infoText.style.color = '#050505';
+        carHeading.style.color = '#050505';
+        pageHeading.style.color = '#050505';
+        label.style.color = '#050505';
+        infoText.style.display = 'block';
+        infoText.textContent = 'You selected the MGB';
+        carHeading.textContent = 'MGB';
+        exit.style.display = 'flex';
+        document.body.style.background = '#008C47';
+      }, false);
+  }    
+  if (exit){
+     exit.addEventListener('mouseover', function() {
+       this.style.cursor = 'pointer';
+     }, false);
+
+     exit.addEventListener('click', function()  {
+      const infoText = document.getElementById('infoText');
+      const carHeading = document.getElementById('carHeading');
+      infoText.style.display = 'none';
+      infoText.textContent = ' ';
+      carHeading.textContent = 'Select a car for more information.'
+      exit.style.display = 'none';
+      document.body.style.background = '#EFEFEF';
+
+     }), false;
+   }
+}
+
+function selectGemini(){
+  const sign = document.getElementById('Gemini');
+  const exit = document.getElementById('exit');
+  if (sign){
+    sign.addEventListener('mouseover', function() {
+          this.style.cursor = 'pointer';
+      }, false);
+      sign.addEventListener('click', function() {
+        const infoText = document.getElementById('infoText');
+        const carHeading = document.getElementById('carHeading');
+        const pageHeading = document.getElementById('pageHeading');
+        const label = document.getElementById('label');
+        infoText.style.color = '#050505';
+        carHeading.style.color = '#050505';
+        pageHeading.style.color = '#050505';
+        label.style.color = '#050505';
+        infoText.style.display = 'block';
+        infoText.textContent = 'You selected the Fiat 124 Spider';
+        carHeading.textContent = 'Fiat 124 Spider';
+        exit.style.display = 'flex';
+        document.body.style.background = '#F6E684';
+      }, false);
+  }    
+  if (exit){
+     exit.addEventListener('mouseover', function() {
+       this.style.cursor = 'pointer';
+     }, false);
+
+     exit.addEventListener('click', function()  {
+      const infoText = document.getElementById('infoText');
+      const carHeading = document.getElementById('carHeading');
+      infoText.style.display = 'none';
+      infoText.textContent = ' ';
+      carHeading.textContent = 'Select a car for more information.'
+      exit.style.display = 'none';
+      document.body.style.background = '#EFEFEF';
+
+     }), false;
+   }
+}
+
+function selectCancer(){
+  const sign = document.getElementById('Cancer');
+  const exit = document.getElementById('exit');
+  if (sign){
+      sign.addEventListener('mouseover', function() {
+          this.style.cursor = 'pointer';
+      }, false);
+      sign.addEventListener('click', function() {
+        const infoText = document.getElementById('infoText');
+        const carHeading = document.getElementById('carHeading');
+        const pageHeading = document.getElementById('pageHeading');
+        const label = document.getElementById('label');
+        infoText.style.color = '#050505';
+        carHeading.style.color = '#050505';
+        pageHeading.style.color = '#050505';
+        label.style.color = '#050505';
+        infoText.style.display = 'block';
+        infoText.textContent = 'You selected the Porche 911';
+        carHeading.textContent = 'Porche 911';
+        exit.style.display = 'flex';
+        document.body.style.background = '#FFFFF0';
+      }, false);
+  }    
+  if (exit){
+     exit.addEventListener('mouseover', function() {
+       this.style.cursor = 'pointer';
+     }, false);
+
+     exit.addEventListener('click', function()  {
+      const infoText = document.getElementById('infoText');
+      const carHeading = document.getElementById('carHeading');
+      infoText.style.display = 'none';
+      infoText.textContent = ' ';
+      carHeading.textContent = 'Select a car for more information.'
+      exit.style.display = 'none';
+      document.body.style.background = '#EFEFEF';
+
+     }), false;
+   }
+}
+
+function selectLeo(){
+  const sign = document.getElementById('Leo');
+  const exit = document.getElementById('exit');
+  if (sign){
+      sign.addEventListener('mouseover', function() {
+          this.style.cursor = 'pointer';
+      }, false);
+      sign.addEventListener('click', function() {
+        const infoText = document.getElementById('infoText');
+        const carHeading = document.getElementById('carHeading');
+        const pageHeading = document.getElementById('pageHeading');
+        const label = document.getElementById('label');
+        infoText.style.color = '#050505';
+        carHeading.style.color = '#050505';
+        pageHeading.style.color = '#050505';
+        label.style.color = '#050505';
+        infoText.style.display = 'block';
+        infoText.textContent = 'You selected the Plymouth Roadrunner';
+        carHeading.textContent = 'Plymouth Roadrunner';
+        exit.style.display = 'flex';
+        document.body.style.background = '#DAA157';
+      }, false);
+  }    
+  if (exit){
+     exit.addEventListener('mouseover', function() {
+       this.style.cursor = 'pointer';
+     }, false);
+
+     exit.addEventListener('click', function()  {
+      const infoText = document.getElementById('infoText');
+      const carHeading = document.getElementById('carHeading');
+      infoText.style.display = 'none';
+      infoText.textContent = ' ';
+      carHeading.textContent = 'Select a car for more information.'
+      exit.style.display = 'none';
+      document.body.style.background = '#EFEFEF';
+
+     }), false;
+   }
+}
+
+function selectLeo(){
+  const sign = document.getElementById('Leo');
+  const exit = document.getElementById('exit');
+  if (sign){
+      sign.addEventListener('mouseover', function() {
+          this.style.cursor = 'pointer';
+      }, false);
+      sign.addEventListener('click', function() {
+        const infoText = document.getElementById('infoText');
+        const carHeading = document.getElementById('carHeading');
+        const pageHeading = document.getElementById('pageHeading');
+        const label = document.getElementById('label');
+        infoText.style.color = '#050505';
+        carHeading.style.color = '#050505';
+        pageHeading.style.color = '#050505';
+        label.style.color = '#050505';
+        infoText.style.display = 'block';
+        infoText.textContent = 'You selected the Plymouth Roadrunner';
+        carHeading.textContent = 'Plymouth Roadrunner';
+        exit.style.display = 'flex';
+        document.body.style.background = '#DAA157';
+      }, false);
+  }    
+  if (exit){
+     exit.addEventListener('mouseover', function() {
+       this.style.cursor = 'pointer';
+     }, false);
+
+     exit.addEventListener('click', function()  {
+      const infoText = document.getElementById('infoText');
+      const carHeading = document.getElementById('carHeading');
+      infoText.style.display = 'none';
+      infoText.textContent = ' ';
+      carHeading.textContent = 'Select a car for more information.'
+      exit.style.display = 'none';
+      document.body.style.background = '#EFEFEF';
+
+     }), false;
+   }
+}
+
+function selectVirgo(){
+  const sign = document.getElementById('Virgo');
+  const exit = document.getElementById('exit');
+  if (sign){
+      sign.addEventListener('mouseover', function() {
+          this.style.cursor = 'pointer';
+      }, false);
+      sign.addEventListener('click', function() {
+        const infoText = document.getElementById('infoText');
+        const carHeading = document.getElementById('carHeading');
+        const pageHeading = document.getElementById('pageHeading');
+        const label = document.getElementById('label');
+        infoText.style.color = '#050505';
+        carHeading.style.color = '#050505';
+        pageHeading.style.color = '#050505';
+        label.style.color = '#050505';
+        infoText.style.display = 'block';
+        infoText.textContent = 'You selected the Honda Civic';
+        carHeading.textContent = 'Honda Civic';
+        exit.style.display = 'flex';
+        document.body.style.background = '#CF8FA9';
+              }
+      , false);
+  }    
+  if (exit){
+     exit.addEventListener('mouseover', function() {
+       this.style.cursor = 'pointer';
+     }, false);
+
+     exit.addEventListener('click', function()  {
+      const infoText = document.getElementById('infoText');
+      const carHeading = document.getElementById('carHeading');
+      infoText.style.display = 'none';
+      infoText.textContent = ' ';
+      carHeading.textContent = 'Select a car for more information.'
+      exit.style.display = 'none';
+      document.body.style.background = '#EFEFEF';
+
+     }), false;
+   }
+}
+
+function selectLibra(){
+  const sign = document.getElementById('Libra');
+  const exit = document.getElementById('exit');
+  if (sign){
+      sign.addEventListener('mouseover', function() {
+          this.style.cursor = 'pointer';
+      }, false);
+      sign.addEventListener('click', function() {
+          const infoText = document.getElementById('infoText');
+          const carHeading = document.getElementById('carHeading');
+          const pageHeading = document.getElementById('pageHeading');
+          const label = document.getElementById('label');
+          infoText.style.color = '#050505';
+          carHeading.style.color = '#050505';
+          pageHeading.style.color = '#050505';
+          label.style.color = '#050505';
+          infoText.style.display = 'block';
+          infoText.textContent = 'You selected the Ford Mustang';
+          carHeading.textContent = 'Ford Mustang';
+          exit.style.display = 'flex';
+          document.body.style.background = '#30A5C2';
+              
+      }, false);
+  }    
+  if (exit){
+     exit.addEventListener('mouseover', function() {
+       this.style.cursor = 'pointer';
+     }, false);
+
+     exit.addEventListener('click', function()  {
+      const infoText = document.getElementById('infoText');
+      const carHeading = document.getElementById('carHeading');
+      infoText.style.display = 'none';
+      infoText.textContent = ' ';
+      carHeading.textContent = 'Select a car for more information.'
+      exit.style.display = 'none';
+      document.body.style.background = '#EFEFEF';
+
+     }), false;
+   }
+}
+
+function selectScorpio(){
+  const sign = document.getElementById('Scorpio');
+  const exit = document.getElementById('exit');
+  if (sign){
+      sign.addEventListener('mouseover', function() {
+          this.style.cursor = 'pointer';
+      }, false);
+      sign.addEventListener('click', function() {
+          const infoText = document.getElementById('infoText');
+          const carHeading = document.getElementById('carHeading');
+          const pageHeading = document.getElementById('pageHeading');
+          const label = document.getElementById('label');
+          infoText.style.display = 'block';
+          infoText.style.color = '#EFEFEF';
+          carHeading.style.color = '#EFEFEF';
+          pageHeading.style.color = '#EFEFEF';
+          label.style.color = '#EFEFEF';
+          infoText.textContent = 'You selected the BMW E30 M3';
+          carHeading.textContent = 'BMW E30 M3';
+          exit.style.display = 'flex';
+          document.body.style.background = '#242424';
+                 
+              }
+       ,false);
+  }    
+  if (exit){
+     exit.addEventListener('mouseover', function() {
+       this.style.cursor = 'pointer';
+     }, false);
+
+     exit.addEventListener('click', function()  {
+      const infoText = document.getElementById('infoText');
+      const carHeading = document.getElementById('carHeading');
+      const pageHeading = document.getElementById('pageHeading');
+      const label = document.getElementById('label');
+      infoText.style.display = 'none';
+      infoText.textContent = ' ';
+      carHeading.textContent = 'Select a car for more information.'
+      exit.style.display = 'none';
+      document.body.style.background = '#EFEFEF';
+      infoText.style.color = '#050505';
+      carHeading.style.color = '#050505';
+      pageHeading.style.color = '#050505';
+      label.style.color = '#050505';
+     }), false;
+   }
+}
+
+function selectSagit(){
+  const sign = document.getElementById('Sagittarius');
+  const exit = document.getElementById('exit');
+  if (sign){
+      sign.addEventListener('mouseover', function() {
+          this.style.cursor = 'pointer';
+      }, false);
+      sign.addEventListener('click', function() {
+          const infoText = document.getElementById('infoText');
+          const carHeading = document.getElementById('carHeading');
+          const pageHeading = document.getElementById('pageHeading');
+          const label = document.getElementById('label');
+          infoText.style.display = 'block';
+          infoText.style.color = '#EFEFEF';
+          carHeading.style.color = '#EFEFEF';
+          pageHeading.style.color = '#EFEFEF';
+          label.style.color = '#EFEFEF';
+          infoText.textContent = 'You selected the Nissan Skyline';
+          carHeading.textContent = 'Nissan Skyline';
+          exit.style.display = 'flex';
+          document.body.style.background = '#501D87';
+                 
+              }
+       ,false);
+  }    
+  if (exit){
+     exit.addEventListener('mouseover', function() {
+       this.style.cursor = 'pointer';
+     }, false);
+
+     exit.addEventListener('click', function()  {
+      const infoText = document.getElementById('infoText');
+      const carHeading = document.getElementById('carHeading');
+      const pageHeading = document.getElementById('pageHeading');
+      const label = document.getElementById('label');
+      infoText.style.display = 'none';
+      infoText.textContent = ' ';
+      carHeading.textContent = 'Select a car for more information.'
+      exit.style.display = 'none';
+      document.body.style.background = '#EFEFEF';
+      infoText.style.color = '#050505';
+      carHeading.style.color = '#050505';
+      pageHeading.style.color = '#050505';
+      label.style.color = '#050505';
+     }), false;
+   }
+}
+
+function selectCapri(){
+  const sign = document.getElementById('Capricorn');
+  const exit = document.getElementById('exit');
+  if (sign){
+      sign.addEventListener('mouseover', function() {
+          this.style.cursor = 'pointer';
+      }, false);
+      sign.addEventListener('click', function() {
+          const infoText = document.getElementById('infoText');
+          const carHeading = document.getElementById('carHeading');
+          const pageHeading = document.getElementById('pageHeading');
+          const label = document.getElementById('label');
+          infoText.style.color = '#050505';
+          carHeading.style.color = '#050505';
+          pageHeading.style.color = '#050505';
+          label.style.color = '#050505';
+          infoText.style.display = 'block';
+          infoText.textContent = 'You selected the Subaru Impreza';
+          carHeading.textContent = 'Subaru Impreza';
+          exit.style.display = 'flex';
+          document.body.style.background = '#8D94A6';
+              
+      }, false);
+  }    
+  if (exit){
+     exit.addEventListener('mouseover', function() {
+       this.style.cursor = 'pointer';
+     }, false);
+
+     exit.addEventListener('click', function()  {
+      const infoText = document.getElementById('infoText');
+      const carHeading = document.getElementById('carHeading');
+      infoText.style.display = 'none';
+      infoText.textContent = ' ';
+      carHeading.textContent = 'Select a car for more information.'
+      exit.style.display = 'none';
+      document.body.style.background = '#EFEFEF';
+
+     }), false;
+   }
+}
+
+function selectAqua(){
+  const sign = document.getElementById('Aquarius');
+  const exit = document.getElementById('exit');
+  if (sign){
+      sign.addEventListener('mouseover', function() {
+          this.style.cursor = 'pointer';
+      }, false);
+      sign.addEventListener('click', function() {
+          const infoText = document.getElementById('infoText');
+          const carHeading = document.getElementById('carHeading');
+          const pageHeading = document.getElementById('pageHeading');
+          const label = document.getElementById('label');
+          infoText.style.color = '#050505';
+          carHeading.style.color = '#050505';
+          pageHeading.style.color = '#050505';
+          label.style.color = '#050505';
+          infoText.style.display = 'block';
+          infoText.textContent = 'You selected the Ford GT';
+          carHeading.textContent = 'Ford GT';
+          exit.style.display = 'flex';
+          document.body.style.background = '#A8D5E6';
+              
+      }, false);
+  }    
+  if (exit){
+     exit.addEventListener('mouseover', function() {
+       this.style.cursor = 'pointer';
+     }, false);
+
+     exit.addEventListener('click', function()  {
+      const infoText = document.getElementById('infoText');
+      const carHeading = document.getElementById('carHeading');
+      infoText.style.display = 'none';
+      infoText.textContent = ' ';
+      carHeading.textContent = 'Select a car for more information.'
+      exit.style.display = 'none';
+      document.body.style.background = '#EFEFEF';
+
+     }), false;
+   }
 }
 
 selectAires();
-/**const backgroundColor = document.getElementsByTagName('body');
-if(backgroundColor){
-    console.log('backgrond');   
-    backgroundColor.color = 'magenta';
-}
-*/
-
-/** function changeBackground(color){
-    document.body.style.background = color;
-}
-
-window.addEventListener('load', function(){ changeBackground('magenta')});
-const infoText = document.getElementById("infoText");
-*/
-
-/**if(infoText) { 
-    console.log('there is info text');
-    infoText.style.display = 'block';
-}
-*/
-
+selectTaurus();
+selectGemini();
+selectCancer();
+selectLeo();
+selectVirgo();
+selectLibra();
+selectScorpio();
+selectSagit();
+selectCapri();
+selectAqua();
 /**
  * @description
  * Given a month and day, determine the corresponding Zodiac sign.
