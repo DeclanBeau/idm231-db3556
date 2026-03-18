@@ -32,11 +32,20 @@
         <div class = "vl"> </div>
         <div class = info_text>
             <h3 id = "carHeading"> Select a car for more information. </h3>
-            <label for = "birthday" id = "label"> Pick a date to select a car: </label>
-            <input type = "date" id = "birthday" name = "birthday">
-             <p id = "infoText" hidden> Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem incidunt, tenetur quod beatae possimus laborum? Ducimus doloremque iste enim in hic et voluptatum quaerat pariatur dolores! Culpa ex omnis quam dolorum repellendus quisquam quas nostrum vero perferendis facilis ad neque molestiae, aliquam alias non asperiores quidem optio atque incidunt in cumque temporibus aspernatur reiciendis. Necessitatibus atque nesciunt similique incidunt, ipsum voluptatum voluptate tenetur expedita facilis ex praesentium beatae facere eius aut. Culpa non laboriosam numquam libero? Repudiandae ratione tempore, cumque, corporis, pariatur quis sit voluptate optio quod placeat atque commodi quas quo dolor id error iure laudantium molestias. Quidem, quo. </p>
+            <div class = input>
+                <form>
+                    <label for = "birthday" id = "label"> Pick a date to select a car: </label>
+                    <input type = "date" id = "birthday" name = "birthday">
+                    <button type = "submit" id = "submit"> Submit </button>
+                </form> 
+            </div>
+            <div class = 'carImage'>
+                <img id = "carImage" src = "images/bmw.webp" hidden>
+            </div>
+             <p id = "infoText" hidden>  </p>
+             
 
-             <p id = "exit" hidden> Exit </p>
+             <button type = "button" id = "exit" hidden> Exit </button>
         </div>
     </div>
 <script src = "main.js"> </script>
